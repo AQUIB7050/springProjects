@@ -1,0 +1,12 @@
+package springmvcsearch;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class FileUploadController {
+
+	@RequestMapping("/uploadFile")
+	public String uploadFile() {
+		return "uploadFile";
+	}
+}

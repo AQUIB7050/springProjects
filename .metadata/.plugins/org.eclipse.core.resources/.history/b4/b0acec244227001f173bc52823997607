@@ -1,0 +1,20 @@
+package springmvcsearch;
+
+import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+
+@ControllerAdvice
+public class MyExceptionHandler {
+
+	@ExceptionHandler(value = NullPointerException.class)
+	public String nullPointerExceptionHandler() {
+		return "null_page";
+	}
+	
+	@ExceptionHandler(value = NumberFormatException.class)
+	public String numberFormatExceptionHandler() {
+		return "null_page";
+	}
+	
+
+}
